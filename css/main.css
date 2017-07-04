@@ -4,4 +4,16 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
+.container-fluid{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.min-height{
+  min-height:80vh;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

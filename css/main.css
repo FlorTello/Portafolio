@@ -1,6 +1,4 @@
 * {
-  margin:0px;
-  padding:0px;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
@@ -10,10 +8,21 @@
   margin-right: 5%;
 }
 .min-height{
-  min-height:80vh;
+  min-height:100vh;
 }
 .flex{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+#home{
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header nav{
+  background: rgba(25, 48, 72, 0.8);
+  position: fixed;
+  opacity: 0.9;
 }

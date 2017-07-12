@@ -19,48 +19,49 @@
            <a href="#!" class="brand-logo"><img src="images/logo-white.png" alt="" width="90"></a>
            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
            <ul class="right hide-on-med-and-down">
-             <li><a href="sass.html">Home</a></li>
-             <li><a href="badges.html">About me</a></li>
-             <li><a href="collapsible.html">Portafolio</a></li>
-             <li><a href="mobile.html" class="btn">Contactos</a></li>
+             <li><a class="scroll" href="#home">Home</a></li>
+             <li><a class="scroll" href="#about">About me</a></li>
+             <li><a class="scroll" href="#skill">Skills</a></li>
+             <li><a class="scroll" href="#portafolio">Portafolio</a></li>
+             <li><a href="#contacto" class="btn scroll">Contactos</a></li>
            </ul>
            <ul class="side-nav teal accent-1 text-white" id="mobile-demo">
-             <li><a href="badges.html">Home</a></li>
-             <li><a href="sass.html">About me</a></li>
-             <li><a href="collapsible.html">Javascript</a></li>
-             <li><a href="mobile.html">Mobile</a></li>
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About me</a></li>
+             <li><a href="#skill">Skills</a></li>
+             <li><a href="#portafolio">Portafolio</a></li>
+             <li><a href="#contacto">Cantactos</a></li>
            </ul>
          </div>
       </nav>
     </header>
-    <section class="section teal min-height flex white-text" id="home">
+    <section class="section teal min-height  flex white-text scroll scrollspy center" id="home">
       <div class="container">
         <div class="row">
-          <div class="col s12 l8">
-            <h5>Hola encantada de conocerte</h5>
-            <h2>Yo soy FLOR TEllO</h2>
-            <p>Egresada de Laboratoria y
-              Bachiller en Ingeniería
-              Informática y Sistemas,
-              Soy una persona proactiva,
-              autodidacta, comprometida
-              con su trabajo y me encanta
-              trabajar en equipo y
-              comprometida con su trabajo.</p><br>
+          <div class="col s12 l12">
+            <h1 class="white-text name hide-on-small-only">Flor de Cantuta Tello Sarmiento</h1>
+            <h2 class="front white-text text-darken-1 hide-on-small-only">Front End Developer</h2><br>
+            <h1 class="white-text  hide-on-large-only">Flor de Cantuta Tello Sarmiento</h1>
+            <h2 class=" white-text text-darken-1 hide-on-large-only">Front End Developer</h2><br>
               <div class="justify">
-                <a class="waves-effect waves-light red accent-2 btn"><i class="material-icons left">cloud</i>button</a>
-                <a class="waves-effect waves-light red accent-2 btn"><i class="material-icons right">cloud</i>button</a>
+                <a class="waves-effect waves-light red accent-2 btn-large"><i class="material-icons left">link</i>Linkedin</a>
+                <a class="waves-effect waves-light red accent-2 btn-large"><i class="material-icons left">cloud</i>CV</a>
               </div>
           </div>
-          <div class="col s12 l4">
-            <img class="circle" src="images/foto.JPG" alt="" width="100%">
-          </div>
         </div>
       </div>
     </section>
-    <section class="section container min-height" id="about">
+    <section class="section container min-height scrollspy" id="about">
+      <h3 class="col left-align s3 ">About me
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </h3>
       <div class="row">
-        <div class="col s12 m4 center">
+        <div class="col s6 m3 offset-s3 offset-m2">
+          <img src="images/flor.JPG" class="circle" alt="" width="90%">
+        </div>
+        <div class="col s12 m6 center">
           <h2 class="center teal-text">
             <i class="material-icons">flash_on</i>
             <h5>Speeds up development</h5>
@@ -68,149 +69,175 @@
               custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
           </h2>
         </div>
-        <div class="col s12 m4 center">
+        <div class="col s12 m6 center">
           <h2 class="center teal-text">
             <i class="material-icons">flash_on</i>
             <h5>Speeds up development</h5>
             <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our
               custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </h2>
-        </div>
-        <div class="col s12 m4 center">
-          <h2 class="center teal-text">
-            <i class="material-icons">flash_on</i>
-            <h5>Speeds up development</h5>
-            <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our
-              custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </h2>
-        </div>
+            </h2>
+          </div>
       </div>
     </section>
-    <section class="section container min-height grey lighten-5" id="portafolio">
+    <section class="section min-height scrollspy" id="skill">
+      <div class="container center-align">
+        <h3 class="col left-align s3 ">Skills
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </h3>
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card sticky-action">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
-            </div>
-          </div>
-        </div>
+        <div class="col s6 l3"><img src="images/js.png" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/jquery.gif" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/ajax.png" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/json.png" alt="sill" class="img-skill"></div>
       </div>
-    </section>
-    <section class="section min-height" id="contactos">
+      <div class="row">
+        <div class="col s6 l3"><img src="images/html5.png" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/css3.png" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/bootstrap.png" alt="sill" class="img-skill"></div>
+        <div class="col s6 l3"><img src="images/foundation.png" alt="sill" class="img-skill"></div>
+      </div>
+      <div class="row">
+      <div class="col s6 l3"><img src="images/materialize.png" alt="sill" class="img-skill"></div>
+      <div class="col s6 l3"><img src="images/github.png" alt="sill" class="img-skill"></div>
+      <div class="col s6 l3"><img src="images/sass.png" alt="sill" class="img-skill"></div>
+      <div class="col s6 l3"><img src="images/node.png" alt="sill" class="img-skill"></div>
+      </div>
+    </div>
+      <!-- <div class="col s3"><img src="images/git.png" alt="sill" class="img-skill" width="100px"></div>
+      <div class="col s3"><img src="images/bootstrap.png" alt="sill" class="img-skill" width="100px"></div>
+      <div class="col s3"><img src="images/css3.png" alt="sill" class="img-skill" width="100px"></div>
+      <div class="col s3"><img src="images/foundation.png" alt="sill" class="img-skill" width="100px"></div>
+      <div class="col s3"><img src="images/github.png" alt="sill" class="img-skill" width="100px"></div>
+      <div class="col s3"><img src="images/github.png" alt="sill" class="img-skill" width="100px"></div> -->
 
     </section>
-    <footer class="section page-footer">
-      <div class="container-fluid">
-        <div class="col s12 m4">
-          <h5>ABOUT ME</h5>
-          <p></p>
+    <section class="section  min-height scrollspy" id="portafolio">
+      <div class="container">
+        <h3 class="col left-align s3 ">Portafolio
+          <div class="progress">
+            <div class="indeterminate"></div>
+          </div>
+        </h3>
+      <div class="row">
+        <div class="col s12 m7">
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
         </div>
+        <div class="col s12 m5">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m7 right">
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+        <div class="col s12 m5">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m7 left">
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+          <div class="col s12 m5 right">
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-l
+              div.col.s3*5>imgight">
+                <img class="activator" src="https://lh5.googleusercontent.com/-P_v4MJ9QCm4/UamVNweEjBI/AAAAAAAAaBQ/fcWaHp4YpP0/s800/psd-template-web.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section min-height scrollspy" id="contacto">
+    <div class="container">
+      <h3 class="col left-align s3 ">Cantactos
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
+      </h3>
+    </div>
+    <div class="row">
+        <div class="col s12 l6 right">
+          <div class="center-block left-align">
+            <p>
+              <i class="material-icons small">email</i>
+              <span class="contact__text">  tellosarmiento.flo@gmail.com</span>
+            </p>
+            <p>
+              <i class="material-icons small">phone</i>
+              <span class="contact__text">  +51 995864425</span>
+            </p>
+            <p>
+              <i class="material-icons small">place</i>
+              <span class="contact__text"> Av México Comas</span>
+            </p>
+            <p>
+              <a href="assets/images/cv_lilianaPeña.pdf" target="_blank" class="btn white-text waves-effect waves-light">
+                <i class="material-icons left">link</i>Ver Linkedin
+              </a>
+            </p>
+            <p>
+              <a href="assets/images/cv_lilianaPeña.pdf" target="_blank" class="btn white-text waves-effect waves-light">
+                <i class="material-icons left">file_download</i>Descargar CV
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer class="section page-footer blue-grey lighten-3">
+      <div class="container-fluid">
+        <!-- <div class="col s12 m4"> -->
+          <!-- <h5>ABOUT ME</h5> -->
+          <!-- <p></p> -->
+        <!-- </div> -->
       </div>
       <div class="footer-copyright">
         <div class="container">
-        <p>&copy</p>
+        <p class="center-align">&copy Flor de Cantuta Tello Sarmiento Laboratoria</p>
         </div>
       </div>
     </footer>

@@ -1,6 +1,11 @@
-   $(".button-collapse").sideNav();
 
     $(document).ready(function(){
+      $(".button-collapse").sideNav();
+       $('ul.tabs').tabs(
+       {
+         swipeable: false,
+         responsiveThreshold: Infinity, // breakpoint for swipeable
+       });
        $('.scrollspy').scrollSpy();
 
        $('.scroll').on('click', function(e) {

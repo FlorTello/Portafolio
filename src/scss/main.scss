@@ -65,7 +65,7 @@ header{
       height: 65px;
     }
     h1{
-      margin: 0;
+      // margin: 0;
     }
     h3,.btns{
       font-family: 'Lato', sans-serif;
@@ -117,7 +117,7 @@ header{
   }
 }
 #skill{
-  .card-image{
+  .-image{
     position: relative;
     height: 25vh;
     img{
@@ -140,11 +140,21 @@ header{
   }
 }
 @media #{$small-and-down} {
+  #home,#about,#portafolio,#skill{
+    @include Height(70vh);
+  }
   #home{
   background-size: cover;
   opacity: 0.9;
   background-position: right;
-
+  .card{
+    .home-name{
+      font-size: 3rem;
+    }
+    .home-skill{
+      font-size: 1.8rem;
+    }
+  }
   .icon-down{
     font-size: 2rem;
     color: lighten($primary_color,10%);
@@ -156,6 +166,15 @@ header{
   .section{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+  #portafolio{
+    .card{
+      .card-action{
+        > a.btn:nth-child(0){
+          display: none;
+        }
+      }
+    }
   }
 }
 footer{

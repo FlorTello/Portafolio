@@ -6809,7 +6809,7 @@ header nav {
   padding-top: 4rem;
   padding-bottom: 4rem; }
 
-.text-uppercase, #skill .card-image span {
+.text-uppercase, #skill .-image span {
   text-transform: uppercase; }
 
 #home, #about, #portafolio, #skill {
@@ -6839,8 +6839,6 @@ header nav {
     border: solid 1.5px white; }
     #home .card .carousel {
       height: 65px; }
-    #home .card h1 {
-      margin: 0; }
     #home .card h3, #home .card .btns {
       font-family: 'Lato', sans-serif; }
   #home .icon-down {
@@ -6872,12 +6870,12 @@ header nav {
   .about .row > div.about__col:nth-child(7) {
     background: #4c4c4c; }
 
-#skill .card-image {
+#skill .-image {
   position: relative;
   height: 25vh; }
-  #skill .card-image img {
+  #skill .-image img {
     width: 70px; }
-  #skill .card-image span {
+  #skill .-image span {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -6889,10 +6887,17 @@ header nav {
   text-align: left; }
 
 @media only screen and (max-width: 600px) {
+  #home, #about, #portafolio, #skill {
+    min-height: 70vh; }
+
   #home {
     background-size: cover;
     opacity: 0.9;
     background-position: right; }
+    #home .card .home-name {
+      font-size: 3rem; }
+    #home .card .home-skill {
+      font-size: 1.8rem; }
     #home .icon-down {
       font-size: 2rem;
       color: #dd7084;
@@ -6901,7 +6906,10 @@ header nav {
 
   .section {
     padding-top: 5rem;
-    padding-bottom: 5rem; } }
+    padding-bottom: 5rem; }
+
+  #portafolio .card .card-action > a.btn:nth-child(0), #portafolio .card .card-action > a.btn-large:nth-child(0) {
+    display: none; } }
 footer {
   opacity: 0.9; }
 

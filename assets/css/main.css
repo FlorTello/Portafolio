@@ -6905,8 +6905,8 @@ header nav {
       bottom: 7px; }
 
   .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
   #portafolio .card .card-action > a.btn:nth-child(0), #portafolio .card .card-action > a.btn-large:nth-child(0) {
     display: none; } }

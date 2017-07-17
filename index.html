@@ -1,156 +1,421 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Flor Tello</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <header>
-      <nav class="cyan darken-4">
-         <div class="nav-wrapper container-fluid">
-           <a href="#!" class="brand-logo"><img src="images/logo-white.png" alt="" width="90"></a>
-           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-           <ul class="right hide-on-med-and-down">
-             <li><a class="scroll" href="#home">Home</a></li>
-             <li><a class="scroll" href="#about">About me</a></li>
-             <li><a class="scroll" href="#skill">Skills</a></li>
-             <li><a class="scroll" href="#portafolio">Portafolio</a></li>
-             <li><a href="#contacto" class="btn scroll">Contáctame</a></li>
-           </ul>
-           <ul class="side-nav teal accent-1 text-white" id="mobile-demo">
-             <li><a class="" href="#home">Home</a></li>
-             <li><a class="" href="#about">About me</a></li>
-             <li><a class="" href="#skill">Skills</a></li>
-             <li><a class="" href="#portafolio">Portafolio</a></li>
-             <li><a class="" href="#contacto">Contáctame</a></li>
-           </ul>
-         </div>
-      </nav>
-    </header>
-    <section class="section teal min-height  flex white-text   scrollspy center" id="home">
-      <div class="container">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flor Tello</title>
+  <!-- <link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="pre-load"></div>
+  <header>
+    <nav class="nav">
+       <div class="nav-wrapper container-fluid">
+         <a href="#!" class="brand-logo"><img src="assets/images/fc_d.png" alt="" width="90"></a>
+         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons pink-text text-darken-1">menu</i></a>
+         <ul class="right hide-on-med-and-down table-of-contents">
+           <li><a class="scroll" href="#home">Home</a></li>
+           <li><a class="scroll" href="#about">Acerca de mi</a></li>
+           <li><a class="scroll" href="#skill">Habilidades</a></li>
+           <li><a class="scroll" href="#portafolio">Proyectos</a></li>
+           <li><a href="#contacto" class="scroll btn pink scroll white-text text-lighten-1">Contáctame</a></li>
+         </ul>
+         <ul class="side-nav pink darken-4 white-text" id="mobile-demo">
+           <li><a class="scroll" href="#home">Home</a></li>
+           <li><a class="scroll" href="#about">Acerca de mi</a></li>
+           <li><a class="scroll" href="#skill">Habilidades</a></li>
+           <li><a class="scroll" href="#portafolio">Proyectos</a></li>
+           <li><a class="scroll" href="#contacto">Contáctame</a></li>
+         </ul>
+       </div>
+    </nav>
+  </header>
+  <section class="section scrollspy center" id="home">
+    <canvas id="demo-canvas">
+    </canvas>
+      <div class="center container-fluid info-home">
         <div class="row">
-          <div class="col s12 l12">
-            <h1 class="white-text name hide-on-small-only">Flor de Cantuta Tello Sarmiento</h1>
-            <h2 class="front white-text text-darken-1 hide-on-small-only">Front End Developer</h2><br>
-            <h1 class="white-text  show-on-small hide-on-large-only">Flor de Cantuta Tello Sarmiento</h1>
-            <h2 class=" white-text text-darken-1 hide-on-large-only">Front End Developer</h2><br>
-              <div class="justify">
-                <a class="waves-effect waves-light red accent-2 btn-large"><i class="material-icons left">link</i>Linkedin</a>
-                <a class="waves-effect waves-light red accent-2 btn-large"><i class="material-icons left">cloud</i>CV</a>
+          <div class="col s12 l8 offset-l2 home-text">
+            <div class="card">
+              <h1 class="white-text">Flor de Cantuta</h1>
+              <h3 class="pink-text">Front End Developer Jr.</h3>
+              <div class="carousel carousel-slider">
+                <div class="carousel-item  white-text" href="#one!">
+                  <h5><i class="red-text text-accent-3"><</i>  Bachiller de Ingeniería Informática y Sistemas   <i class="red-text text-accent-3 ">></i></h5>
+                </div>
+                <div class="carousel-item  white-text" href="#two!">
+                  <h5><i class="red-text text-accent-3"><</i>  Autodidacta   <i class="red-text text-accent-3 ">></i></h5>
+                </div>
+                <div class="carousel-item  white-text" href="#two!">
+                  <h5><i class="red-text text-accent-3"><</i>  Entusiasta   <i class="red-text text-accent-3 ">></i></h5>
+                </div>
+                <div class="carousel-item  white-text" href="#two!">
+                  <h5><i class="red-text text-accent-3"><</i>  Lider   <i class="red-text text-accent-3 ">></i></h5>
+                </div>
+                <div class="carousel-item  white-text" href="#two!">
+                  <h5><i class="red-text text-accent-3"><</i>  Autodidacta   <i class="red-text text-accent-3 ">></i></h5>
+                </div>
               </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section container min-height scrollspy" id="about">
-      <h3 class="col left-align s3 ">About me
-        <div class="progress">
-          <div class="indeterminate"></div>
-        </div>
-      </h3>
-      <div class="row">
-        <div class="col s6 m3 offset-s3 offset-m2">
-          <img src="images/flor.JPG" class="circle" alt="" width="90%">
-        </div>
-        <div class="col s12 m6 center">
-          <h2 class="center teal-text">
-            <i class="material-icons">flash_on</i>
-            <h5>Mi Descripción</h5>
-            <p> Egresada de Laboratoria y
-                Bachiller en Ingeniería
-                Informática y Sistemas,
-                Soy una persona proactiva,
-                autodidacta, comprometida
-                con su trabajo y me encanta
-                trabajar en equipo y
-                comprometida con su trabajo.</p>
-          </h2>
-        </div>
-        <div class="col s12 m6 center">
-          <h2 class="center teal-text">
-            <i class="material-icons">flash_on</i>
-            <h5>Speeds up development</h5>
-            <p>We did most of the heavy lifting for you to provide a default stylings that incorporate our
-              custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-            </h2>
-          </div>
-      </div>
-    </section>
-    <section class="section min-height scrollspy" id="skill">
-      <div class="container center-align">
-        <h3 class="col left-align s3 ">Skills
-          <div class="progress">
-            <div class="indeterminate"></div>
-          </div>
-        </h3>
-      <div class="row">
-        <div class="col s6 l3"><img src="images/js.png" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/jquery.gif" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/ajax.png" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/json.png" alt="sill" class="img-skill"></div>
-      </div>
-      <div class="row">
-        <div class="col s6 l3"><img src="images/html5.png" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/css3.png" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/bootstrap.png" alt="sill" class="img-skill"></div>
-        <div class="col s6 l3"><img src="images/foundation.png" alt="sill" class="img-skill"></div>
-      </div>
-      <div class="row">
-      <div class="col s6 l3"><img src="images/materialize.png" alt="sill" class="img-skill"></div>
-      <div class="col s6 l3"><img src="images/github.png" alt="sill" class="img-skill"></div>
-      <div class="col s6 l3"><img src="images/sass.png" alt="sill" class="img-skill"></div>
-      <div class="col s6 l3"><img src="images/node.png" alt="sill" class="img-skill"></div>
-      </div>
-    </div>
-      <!-- <div class="col s3"><img src="images/git.png" alt="sill" class="img-skill" width="100px"></div>
-      <div class="col s3"><img src="images/bootstrap.png" alt="sill" class="img-skill" width="100px"></div>
-      <div class="col s3"><img src="images/css3.png" alt="sill" class="img-skill" width="100px"></div>
-      <div class="col s3"><img src="images/foundation.png" alt="sill" class="img-skill" width="100px"></div>
-      <div class="col s3"><img src="images/github.png" alt="sill" class="img-skill" width="100px"></div>
-      <div class="col s3"><img src="images/github.png" alt="sill" class="img-skill" width="100px"></div> -->
-
-    </section>
-    <section class="section  min-height scrollspy" id="portafolio">
-      <div class="container">
-        <h3 class="col left-align s3 ">Portafolio
-          <div class="progress">
-            <div class="indeterminate"></div>
-          </div>
-        </h3>
-      <div class="row">
-        <h3 class="center">Yape</h3>
-        <div class="col s3 offset-s4 transparent">
-          <ul id="tabs-project1" class="tabs">
-            <li class="tab col s4"><a class="active" href="#project1-a"> 1</a></li>
-            <li class="tab col s4"><a class="" href="#project1-b"> 2</a></li>
-            <li class="tab col s4"><a href="#project1-c"> 3</a></li>
-          </ul>
-        </div>
-        <div id="project1-a" class="col s12">
-          <div class="col s12 m7">
-            <p class="col s6 offset-s3 center">Simulación del sistema de registro de la aplicación para movil Yape del BCP</p>
-            <div class="col s4 offset-s4">
+              <div class="center btns">
+                <a class="btn waves-effect waves-light red accent-3 white btn-large offset-s1"><i class="material-icons left">file_download</i>Ver CV</a>
+                <!-- <a class="waves-effect waves-light pink accent-3 white btn-large offset-s1"><i class="material-icons left">link</i>Linkedin</a> -->
+              </div>
             </div>
           </div>
-          <div class="col s12 m5">
-            <div class="card sticky-action">
+        </div>
+      </div>
+      <div class="col s12 center">
+        <a href="#about" class="col s12 center scroll"><i class="material-icons icon-down">arrow_downward</i></a>
+      </div>
+      </div>
+  </section>
+  <section class="section scrollspy center deep-purple lighten-5" id="about">
+    <h4 class="text-uppercase">Acerda de Mi</h4>
+    <h6>PERMÍTAME PRESENTARME</h6>
+    <div class="container-fluid">
+      <div class="row section">
+        <div class="col s3 left-align">
+          <h5 class="">Mi Historia</h5>
+          <p>Soy Front End Developer Jr. egresada de Laboratoria y Bachiller en Informática y Sistemas, empece mis estudios en la Univesidad Nacional Micaela Bastidas de Apurímac </p>
+          <p>Tengo conocimiento de programación web y manejo herramientas que haces que mi trabajo sea mas eficiente y eficaz</p>
+        </div>
+        <div class="col s3 offset-s1">
+          <h5>Objetivos</h5>
+          <p>Me gustaría desenvolverme en una emprese interesante donde pueda aportar con mi talento</p>
+          <p>Manejar la Parte Back End y un futuro llegar a ser full-stack developer</p>
+
+        </div>
+        <div class="col s4 offset-s1">
+          <br>
+          <img src="assets/images/flor.JPG" class="circle" alt="" width="70%">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section scrollspy center" id="skill">
+    <h4>Habilidades</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col l6 s12">
+          <h6 class="pink-text">Tech skill</h6><br>
+          <div class="row">
+            <div class="card col s6 skill-img l3">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/proyectos/yape.jpg">
+                <img class="activator" src="assets/images/json.png" alt="json">
+                <span class="purple-text">JSON</span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">YAPE BCP<i class="material-icons right">more_vert</i></span>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/js.png" alt="json">
+                <span class="purple-text">javascript</span>
               </div>
-              <div class="card-action">
-                <a href="https://yape-app-laboratoria.herokuapp.com/" target="_blank">Visualizar demo</a>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/ajax.png" alt="json"><br>
+                <span class="purple-text">Ajax</span>
+              </div>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/jquery.gif" alt="json">
+                <span class="purple-text">jquery</span>
+              </div>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/html5.png" alt="json">
+                <span class="purple-text">html5</span>
+              </div>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-css3 waves-light">
+                <img class="activator" src="assets/images/css3.png" alt="json">
+                <span class="purple-text">css3</span>
+              </div>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-css3 waves-light">
+                <img class="activator" src="assets/images/node.png" alt="json">
+                <span class="purple-text">Node js</span>
+              </div>
+            </div>
+            <div class="card col s6 skill-img l3">
+              <div class="card-image waves-effect waves-css3 waves-light">
+                <img class="activator" src="assets/images/sass.png" alt="json">
+                <span class="purple-text">sass</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l6 s12">
+          <h6 class="pink-text">Life Skill</h6>
+          <br>
+          <ul class="collection col s8 offset-s2">
+             <li class="collection-item">Trabajo en equipo</li>
+             <li class="collection-item">Lider</li>
+             <li class="collection-item">Responsable</li>
+             <li class="collection-item">Puntual</li>
+             <li class="collection-item">Colaborativa</li>
+             <li class="collection-item">Proactiva</li>
+           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section about scrollspy center" id="portafolio">
+    <div class="container-fluid">
+      <h4 class="titulo left-align white-text">Proyectos Personales</h4><br>
+      <div class="row">
+        <div class="col s12 l6">
+          <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
+          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+            <li class="">
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
+              <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Requerimientos</div>
+              <div class="collapsible-body">
+                <ul class="left-align">
+                  <li>* Trabajar con componentes</li>
+                  <li>* Usar la data del API</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">whatshot</i>Objetivos</div>
+              <div class="collapsible-body"><span>La culminación del proyecto en 2 días y medio y el trabajo con hitos</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 l6 about__col">
+          <div id="project1-a" class="col s12 l10 offset-l1">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/proyectos/yape.jpg">
+                </div>
+                <div class="card-action col s12 grey">
+                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col s4 offset-s2">Visualizar</a>
+                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col s4 offset-s1">Código</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
+                  <p class="">Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
+                     como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
+                     planes en experiencias únicas, sin números de cuenta ni token.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col s12 l6 right">
+          <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5>
+          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+            <li class="">
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
+              <div class="collapsible-body"><span>Proyecto que simula la aplicación de labcar su funcionalidad es que se trace una ruta entre el ubicación actual y un punto de destino ingresado por el usuario y que estime la tarifa en base a la distancia entre los puntos</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Requerimientos</div>
+              <div class="collapsible-body">
+                <ul class="left-align">
+                  <li>* Responsive design (mobile, desktop)</li>
+                  <li>* Framework de bootstrap</li>
+                  <li>* Google maps API</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">whatshot</i>Objetivos</div>
+              <div class="collapsible-body"><span>Lograr el diseño para movil y desktop con la API de Google Maps</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 l6 about__col">
+          <div id="project1-a" class="col s12 l10 offset-l1">
+            <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/proyectos/labcar1.png">
+            </div>
+
+            <div class="card-action col s12 grey">
+              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col s4 offset-s2">Visualizar</a>
+              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col s4 offset-s1">Código</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
+              <p>Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.
+                  Se ha comprobado que Labcar tiene las tarifas más bajas del mercado.
+                  Sabemos que tu tiempo es dinero, por lo que si nuestro servicio se demora en llegar más de lo establecido te daremos un 10% de descuento en tu viaje.
+                  </p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col s12 l6 ">
+          <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5>
+          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+            <li class="">
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
+              <div class="collapsible-body"><span>Proyecto que simula la aplicación de labcar su funcionalidad es que se trace una ruta entre el ubicación actual y un punto de destino ingresado por el usuario y que estime la tarifa en base a la distancia entre los puntos</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Requerimientos</div>
+              <div class="collapsible-body">
+                <ul class="left-align">
+                  <li>* Responsive design (mobile, desktop)</li>
+                  <li>* Framework de bootstrap</li>
+                  <li>* Google maps API</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header active"><i class="material-icons">whatshot</i>Objetivos</div>
+              <div class="collapsible-body"><span>Lograr el diseño para movil y desktop con la API de Google Maps</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 l6 about__col">
+          <div id="project1-a" class="col s12 l10 offset-l1">
+              <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="assets/images/proyectos/neat.png">
+                </div>
+                <div class="card-action col s12 grey">
+                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col s4 offset-s2">Visualizar</a>
+                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col s4 offset-s1">Código</a>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
+                  <p class="">Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
+                     como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
+                     planes en experiencias únicas, sin números de cuenta ni token.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="col s12 l6  right">
+          <p class="col s12 l10 offset-l1">Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
+             como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
+             planes en experiencias únicas, sin números de cuenta ni token.</p>
+          <ul class="collapsible col s12 l10 offset-l1" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col s12 l6 about__col">
+          <div id="project1-a" class="col s12 l10 offset-l1">
+            <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/images/proyectos/labcar1.png">
+            </div>
+
+            <div class="card-action col s12 grey">
+              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col s4 offset-s2">Visualizar</a>
+              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col s4 offset-s1">Código</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
+              <p>Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
+                 como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
+                 planes en experiencias únicas, sin números de cuenta ni token.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h4 class="titulo left-align white-text">Proyectos Colaborativos</h4><br>
+        <div class="row">
+          <div class="col s12 l6 ">
+            <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
+            <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+              <li class="">
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
+                <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Requerimientos</div>
+                <div class="collapsible-body">
+                  <ul class="left-align">
+                    <li>* Trabajar con componentes</li>
+                    <li>* Usar la data del API</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header active"><i class="material-icons">whatshot</i>Objetivos</div>
+                <div class="collapsible-body"><span>La culminación del proyecto en 2 días y medio y el trabajo con hitos</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col s12 l6 about__col">
+            <div id="project1-a" class="col s12 l10 offset-l1">
+                <div class="card sticky-action">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="assets/images/proyectos/lyft.png">
+                  </div>
+
+                  <div class="card-action col s12 grey">
+                    <a href="https://katherineortega.github.io/Lyft-CodeReview/" target="_blank" class="btn red col s4 offset-s1">Visualizar</a>
+                    <a href="https://github.com/katherineortega/Lyft-CodeReview" target="_blank" class="btn red col s4 offset-s2">código</a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
+                    <p class="">Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
+                       como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
+                       planes en experiencias únicas, sin números de cuenta ni token.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col s12 l6 right">
+            <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
+            <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+              <li class="">
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
+                <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Requerimientos</div>
+                <div class="collapsible-body">
+                  <ul class="left-align">
+                    <li>* Trabajar con componentes</li>
+                    <li>* Usar la data del API</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header active"><i class="material-icons">whatshot</i>Objetivos</div>
+                <div class="collapsible-body"><span>La culminación del proyecto en 2 días y medio y el trabajo con hitos</span></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col s12 l6 about__col">
+            <div id="project1-a" class="col s12 l10 offset-l1">
+              <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="assets/images/proyectos/porfolio.png">
+              </div>
+
+              <div class="card-action col s12 black">
+                <a href="https://flortello.github.io/ProyectoMaterialize/" target="_blank" class="btn red col s4 offset-s1">Visualizar</a>
+                <a href="https://github.com/FlorTello/ProyectoMaterialize" target="_blank" class="btn red col s4 offset-s2">código</a>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -159,126 +424,19 @@
                    planes en experiencias únicas, sin números de cuenta ni token.</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="project1-b" class="col s12">
-          <div class="col l3  s12 offset-l1 center valign-wrapper">
-            <h3>YAPE</h3>
-          </div>
-          <div class="col l6 s12 right">
-            <div class="card-image small teal vet">
-              <iframe src="https://docs.google.com/presentation/d/1XGYZcZonW7SeJDuLaIvhMnUBRj5YqgbTbpXHErEJp18/embed?" frameborder="0" width="450" height="367" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-              <!-- <img class="activator" src="images/proyectos/yape.jpg"> -->
             </div>
           </div>
-        </div>
-        <div id="project1-c" class="col s12">Test 3</div>
       </div>
-      <div class="row">
-        <div class="col s4 offset-s4 transparent">
-          <ul id="tabs-project2" class="tabs">
-            <li class="tab col s4"><a class="active" href="#project2-a"> 1</a></li>
-            <li class="tab col s4"><a class="" href="#project2-b"> 2</a></li>
-            <li class="tab col s4"><a href="#project2-c"> 3</a></li>
-          </ul>
-        </div>
-        <div id="project2-a" class="col s12">
-          <div class="col s12 m7 right">
-            <p>Proyecto que simula la aplicación de labcar su funcionalidad es que se trace una ruta entre el ubicación actual y un punto de destino ingresado por el usuario y que estime la tarifa en base a la distancia entre los puntos</p>
-          </div>
-          <div class="col s12 m5">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/proyectos/labcar.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">LabCar<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="https://flortello.github.io/labcar-review/" target="_blank">Visualizar demo</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Descripción de la Empresa<i class="material-icons right">close</i></span>
-                <p>Labcar es una empresa de taxis que te permite pedir un taxi cuando quieras y en donde quieras.
-                    Se ha comprobado que Labcar tiene las tarifas más bajas del mercado.
-                    Sabemos que tu tiempo es dinero, por lo que si nuestro servicio se demora en llegar más de lo establecido te daremos un 10% de descuento en tu viaje.
-                    </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="project2-b" class="col s12">
-          <div id="project1-b" class="col s12">
-            <div class="col l3  s12 offset-l1 center valign-wrapper">
-              <h3>Labcar</h3>
-            </div>
-            <div class="col l6 s12 right">
-              <div class="card-panel small teal vet">
-                <iframe src="https://docs.google.com/presentation/d/1XGYZcZonW7SeJDuLaIvhMnUBRj5YqgbTbpXHErEJp18/embed?" frameborder="0" width="450" height="367" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <!-- <img class="activator" src="images/proyectos/yape.jpg"> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="project2-c" class="col s12">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s4 offset-s4 transparent">
-          <ul id="tabs-project3" class="tabs">
-            <li class="tab col s4"><a class="active" href="#project3-a"> 1</a></li>
-            <li class="tab col s4"><a class="" href="#project3-b"> 2</a></li>
-            <li class="tab col s4"><a href="#project3-c"> 3</a></li>
-          </ul>
-        </div>
-        <div id="project3-a" class="col s12">
-          <div class="col s12 m7">
-              <p>Proyecto para desktop, es una pagina web que tomando como base la pagína oficial de Lyft</p>
-          </div>
-          <div class="col s12 m5">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="images/proyectos/sprint3.gif">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">YAPE BCP<i class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <a href="#">Visualizar Demo</a>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Descripción de la Empresa<i class="material-icons right">close</i></span>
-                <p>Lyft es una compañía de redes de transporte con sede en San Francisco, California . Desarrolla, comercializa y opera la aplicación
-                  móvil de transporte de Lyft. Lanzado en junio de 2012, Lyft opera en aproximadamente 300 ciudades de Estados Unidos.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="project3-b" class="col s12">
-          <div class="col l3  s12 offset-l1 center valign-wrapper">
-            <h3>Lyft</h3>
-          </div>
-          <div class="col l6 s12 right">
-            <div class="card-panel small teal vet">
-              <!-- <iframe src="https://docs.google.com/presentation/d/1XGYZcZonW7SeJDuLaIvhMnUBRj5YqgbTbpXHErEJp18/embed?" frameborder="0" width="450" height="367" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
-              <!-- <img class="activator" src="images/proyectos/yape.jpg"> -->
-            </div>
-          </div>
-        </div>
-        <div id="project3-c" class="col s12">Test 3</div>
-      </div>
-
     </div>
-    </section>
-    <section class="section scrollspy" id="contacto">
-    <div class="container">
-      <h3 class="col left-align s12 ">Contáctame
-        <div class="progress">
-          <div class="indeterminate"></div>
+  </section>
+  <section class="section scrollspy center" id="contacto">
+    <h3 class="center text-uppercase">Contáctame</h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 l4">
+          <p class="flow-text justify">Llegaste hasta aquí. No dudes en contactarme, aquí te dejo mi información...</p>
         </div>
-      </h3>
-    <div class="row">
-        <div class="col s12 l12 offset-4 center">
+        <div class="col s12 l4">
           <div class="center-block center-align">
             <p>
               <i class="material-icons small">email</i>
@@ -289,51 +447,37 @@
             </p>
             <p>
               <i class="material-icons small">place</i>
-              <span class=""> Av México Comas</span>
-            </p>
-            <p>
-              <a href="assets/images/cv_lilianaPeña.pdf" target="_blank" class="btn white-text waves-effect waves-light">
-                <i class="material-icons left">link</i>Ver Linkedin
-              </a>
-            </p>
-            <p>
-              <a href="assets/images/cv_lilianaPeña.pdf" target="_blank" class="btn white-text waves-effect waves-light">
-                <i class="material-icons left">file_download</i>Descargar CV
-              </a>
+              <span class=""> Av México Comas N° 335</span>
             </p>
           </div>
         </div>
-      </div>
-    </div>
-    </section>
-    <footer class="section  blue-grey lighten-3">
-      <div class="container-fluid">
-        <!-- <div class="col s12 m4"> -->
-          <!-- <h5>ABOUT ME</h5> -->
-          <!-- <p></p> -->
-        <!-- </div> -->
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-        <p class="center-align">&copy Flor de Cantuta Tello Sarmiento Laboratoria</p>
+        <div class="col s12 l4">
+          <ul>
+            <li><a href=""><i class="fa fa-github fa-2x black-text" aria-hidden="true"></i></a></li><br>
+            <li><a href=""><i class="fa fa-linkedin fa-2x black-text" aria-hidden="true"></i></a></li><br>
+            <li><a href=""><i class="fa fa-google fa-2x black-text" aria-hidden="true"></i></a></li><br>
+          </ul>
         </div>
       </div>
-    </footer>
-
-    <div class="fixed-action-btn vertical">
-      <a class="btn-floating btn-large red">
-        <i class="large material-icons">menu</i>
-      </a>
-      <ul>
-        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-        <!-- <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-        <li><a class="btn-floating green" href="#home"><i class="material-icons">publish</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li> -->
-      </ul>
     </div>
+  </section>
+  <footer class="page-footer">
+    <div class="container-fluid">
+      <!-- <div class="col s12 m4"> -->
+        <!-- <h5>ABOUT ME</h5> -->
+        <!-- <p></p> -->
+      <!-- </div> -->
+      <div class="footer-copyright">
+        <p class="center-align">&copy Flor de Cantuta Tello Sarmiento Laboratoria</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script> -->
+  <!-- <script type="text/javascript" src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script> -->
+  <script src="assets/js/vendor/header.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
 </html>

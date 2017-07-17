@@ -1,26 +1,45 @@
-@import "components/color";
-@import "components/fonts";
-
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+@import "fonts";
+@import "materialize";
+@import "color";
+@mixin Height ($h) {
+  min-height: $h;
 }
+html {
+   font-family: 'Raleway', Trebuchet, sans-serif;
+ }
+header{
+  nav{
+    position: fixed;
+    opacity: 0.9;
+    z-index: 1000;
+  }
+}
+// .pre-load{
+// 	position: fixed;
+// 	left: 0px;
+// 	top: 0px;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 9999;
+// 	background: url(../images/preloader.gif) center no-repeat #fff;
+// }
 .container-fluid{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
-.min-height{
-  padding-bottom: 70px;
-  padding-top: 70px;
-  min-height:100vh;
+.section{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
-.flex{
-  display: flex;
-  align-items: center;
+.text-uppercase{
+  text-transform: uppercase;
+}
+#home,#about,#portafolio,#skill{
+  @include Height(100vh);
 }
 #home{
-  background-image: url('../images/la.jpg');
+  background-image: url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -28,40 +47,119 @@
   background-position: center;
   -webkit-filter: grayscale(10%); /* Safari 6.0 - 9.0 */
   filter: grayscale(10%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  .info-home{
+    position: absolute;
+  }
+  .card{
+    opacity: 0.8;
+    background: darken($secundary_color,10%);
+    font-weight: 700;
+    // font-style: italic;
+    font-family: 'Courgette', cursive;
+    border: solid 1.5px white;
+    .carousel{
+      height: 65px;
+    }
+    h1{
+      margin: 0;
+    }
+    h3,.btns{
+      font-family: 'Lato', sans-serif;
+    }
+  }
+  .icon-down{
+    font-size: 5rem;
+    color: darken($primary_color,10%);
+    position: absolute;
+    bottom: 7px;
+  }
 }
-.front{
-  overflow: hidden;
-  border-right: .20em solid orange; /*ancho del cursor*/
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .2em;
-  animation:   write 5s steps(50)infinite alternate;
+.about{
+  background: darken($complent-color,1%);
+  &__col{
+    // background: lighten($complent-bg,10%);
+    background: lighten($complent-color,20%);
+  }
+  .row {
+    .col.collapsible{
+      padding: 0;
+    }
+    > div.about__col:nth-child(0){
+      background: lighten($complent-color,20%);
+    }
+    > div.about__col:nth-child(1){
+      background: lighten($complent-color,33%);
+      // @include Height(52.2vh);
+    }
+    > div.about__col:nth-child(2){
+      background: lighten($complent-color,30%);
+    }
+    > div.about__col:nth-child(3){
+      background: lighten($complent-color,23%);
+      // @include Height(52.2vh);
+    }
+    > div.about__col:nth-child(4){
+      background: lighten($complent-color,39%);
+    }
+    > div.about__col:nth-child(5){
+      background: lighten($complent-color,36%);
+    }
+    > div.about__col:nth-child(6){
+      background: lighten($complent-color,17%);
+    }
+    > div.about__col:nth-child(7){
+      background: lighten($complent-color,17%);
+    }
+  }
 }
-.name{
-  font-size: 70px;
+#skill{
+  .card-image{
+    position: relative;
+    height: 25vh;
+    img{
+      width: 70px;
+      // padding: 25%;
+    }
+    span{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @extend .text-uppercase;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
+  .card-content{
+    font-size: .7rem;
+    color: blue;
+    text-align: left;
+  }
 }
-@keyframes write{
-  from{width: 0%}
-  to{width: 80%}
-}
-header nav{
-  position: fixed;
-  opacity: 0.9;
-  z-index: 1000;
-}
-#portafolio{
-  background: rgba(25, 48, 72, 0.1);
-}
-.img-skill{
-  width: 50%;
-}
-.progress{
-  width: 230px ;
-}
-
-
 @media #{$small-and-down} {
+  #home{
+  background-size: cover;
+  opacity: 0.9;
+  background-position: right;
+
+  .icon-down{
+    font-size: 2rem;
+    color: lighten($primary_color,10%);
+    position: absolute;
+    bottom: 7px;
+  }
+  }
   // styles for small screens and down
+  .section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+footer{
+  opacity: 0.9;
 }
 @media #{$medium-and-up} {
   // styles for medium screens and larger
@@ -71,4 +169,7 @@ header nav{
 }
 @media #{$large-and-up} {
   // styles for large screens and up
+}
+@media #{$extra-large-and-up} {
+  // styles for extra large screens and up
 }

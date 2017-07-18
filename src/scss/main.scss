@@ -118,26 +118,13 @@ header{
   }
 }
 #skill{
-  .-image{
-    position: relative;
-    height: 25vh;
-    img{
-      width: 70px;
-      // padding: 25%;
+  .icon-skill{
+    font-size: 3rem;
+    // color: red;
+    // color: $primary_color;
+    &:hover{
+      color: $primary_color;
     }
-    span{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      @extend .text-uppercase;
-      font-size: 0.8rem;
-      font-weight: bold;
-    }
-  }
-  .card-content{
-    font-size: .7rem;
-    color: blue;
-    text-align: left;
   }
 }
 @media #{$small-and-down} {

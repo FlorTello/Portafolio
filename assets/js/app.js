@@ -1,11 +1,31 @@
 //Loader
-$(document).on("load",function(e){
-  console.log(e);
-  alert("pageload event fired!");
-  function complete() {
-    $( ".pre-load" ).removeClass( ".pre-load");
-  }
-  $(".pre-load").fadeOut( 1600, complete );
+// $(document).on("preloader",function(e){
+//   console.log(e);
+//   setTimeout(function(){
+// 		$("#pre-load").addClass("pre-load")
+// 	},2000);
+//   // alert("pageload event fired!");
+//   // function complete() {
+//   //   $( ".pre-load" ).removeClass( ".pre-load");
+//   // }
+//   // $(".pre-load").fadeOut( 1600, complete );
+// });
+$(document).ready(function() {
+  setTimeout(function(){
+    $("#pre-load").fadeOut("slow");
+	},2000);
+});
+var lastScrollTop = 0;
+$(window).scroll((e) =>{
+  // var scrollTop = $(this).scrollTop();
+  var scrollTop= window.pageYOffset || document.body.scrollTop;
+  console.log(scrollTop);
+  if (scrollTop <= lastScrollTop) {
+    $('nav').fadeIn("slow");
+  } else {
+    $('nav').fadeOut("slow");
+ }
+  lastScrollTop = scrollTop;
 });
 $(document).ready(function(){
   $( ".pre-load" ).removeClass( ".pre-load");

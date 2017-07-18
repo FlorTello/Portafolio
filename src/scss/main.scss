@@ -14,15 +14,15 @@ header{
     z-index: 1000;
   }
 }
-// .pre-load{
-// 	position: fixed;
-// 	left: 0px;
-// 	top: 0px;
-// 	width: 100%;
-// 	height: 100%;
-// 	z-index: 9999;
-// 	background: url(../images/preloader.gif) center no-repeat #fff;
-// }
+.pre-load{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://gis.gastongov.com/GastonGIS/Content/images/loading.gif) center no-repeat #fff;
+}
 .container-fluid{
   width: 80%;
   margin-left: 10%;
@@ -55,17 +55,18 @@ header{
     position: absolute;
   }
   .card{
+    padding: 15px;
     opacity: 0.8;
     background: darken($secundary_color,10%);
     font-weight: 700;
     // font-style: italic;
     font-family: 'Courgette', cursive;
-    border: solid 1.5px white;
+    // border: solid 1px white;
     .carousel{
       height: 65px;
     }
     h1{
-      // margin: 0;
+      margin: 0;
     }
     h3,.btns{
       font-family: 'Lato', sans-serif;
@@ -82,38 +83,38 @@ header{
   background: darken($complent-color,1%);
   &__col{
     // background: lighten($complent-bg,10%);
-    background: lighten($complent-color,20%);
+    // background: lighten($complent-color,20%);
   }
   .row {
     .col.collapsible{
       padding: 0;
     }
-    > div.about__col:nth-child(0){
-      background: lighten($complent-color,20%);
-    }
-    > div.about__col:nth-child(1){
-      background: lighten($complent-color,33%);
-      // @include Height(52.2vh);
-    }
-    > div.about__col:nth-child(2){
-      background: lighten($complent-color,30%);
-    }
-    > div.about__col:nth-child(3){
-      background: lighten($complent-color,23%);
-      // @include Height(52.2vh);
-    }
-    > div.about__col:nth-child(4){
-      background: lighten($complent-color,39%);
-    }
-    > div.about__col:nth-child(5){
-      background: lighten($complent-color,36%);
-    }
-    > div.about__col:nth-child(6){
-      background: lighten($complent-color,17%);
-    }
-    > div.about__col:nth-child(7){
-      background: lighten($complent-color,17%);
-    }
+    // > div.about__col:nth-child(0){
+    //   background: lighten($complent-color,20%);
+    // }
+    // > div.about__col:nth-child(1){
+    //   background: lighten($complent-color,33%);
+    //   // @include Height(52.2vh);
+    // }
+    // > div.about__col:nth-child(2){
+    //   background: lighten($complent-color,30%);
+    // }
+    // > div.about__col:nth-child(3){
+    //   background: lighten($complent-color,23%);
+    //   // @include Height(52.2vh);
+    // }
+    // > div.about__col:nth-child(4){
+    //   background: lighten($complent-color,39%);
+    // }
+    // > div.about__col:nth-child(5){
+    //   background: lighten($complent-color,36%);
+    // }
+    // > div.about__col:nth-child(6){
+    //   background: lighten($complent-color,17%);
+    // }
+    // > div.about__col:nth-child(7){
+    //   background: lighten($complent-color,17%);
+    // }
   }
 }
 #skill{

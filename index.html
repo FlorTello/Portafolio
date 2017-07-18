@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-  <div class="pre-load"></div>
+  <div id ="pre-load" class="pre-load"></div>
   <header>
     <nav class="nav">
        <div class="nav-wrapper container-fluid">
@@ -35,8 +35,7 @@
     </nav>
   </header>
   <section class="section scrollspy center" id="home">
-    <canvas id="demo-canvas">
-    </canvas>
+    <canvas id="demo-canvas"> </canvas>
       <div class="center container-fluid info-home">
         <div class="row">
           <div class="col s12 l8 offset-l2 home-text">
@@ -61,7 +60,7 @@
                 </div>
               </div>
               <div class="center btns">
-                <a class="btn waves-effect waves-light red accent-3 white btn-large offset-s1"><i class="material-icons left">file_download</i>Ver CV</a>
+                <a class="btn waves-effect waves-light red accent-3 white offset-s1"><i class="material-icons left">file_download</i>Ver CV</a>
                 <!-- <a class="waves-effect waves-light pink accent-3 white btn-large offset-s1"><i class="material-icons left">link</i>Linkedin</a> -->
               </div>
             </div>
@@ -171,10 +170,22 @@
   <section class="section about scrollspy center" id="portafolio">
     <div class="container-fluid">
       <h4 class="titulo left-align white-text">Proyectos Personales</h4><br>
+      <h5 class="col s12 l12 offset-l1 white-text">Aplicación móvil YAPE</h5><br><br>
       <div class="row">
         <div class="col s12 l6">
-          <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
-          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+          <!-- <div class="card sticky-action hide-on-small-only">
+            <div class="card  waves-effect waves-block waves-light">
+              <p><h5>Requerimientos</h5></p>
+              <p>ghjgkjkl</p>
+              <p>ghjgkjkl</p>
+              <p>ghjgkjkl</p>
+              <p><h5>Requerimientos</h5></p>
+              <p>ghjgkjkl</p>
+              <p>ghjgkjkl</p>
+              <p>ghjgkjkl</p>
+            </div>
+          </div> -->
+          <ul class="collapsible col s12 l10 offset-l0 grey hide-on--only" data-collapsible="accordion">
             <li class="">
               <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
               <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
@@ -195,14 +206,14 @@
           </ul>
         </div>
         <div class="col s12 l6 about__col">
-          <div id="project1-a" class="col s12 l10 offset-l1">
+          <div id="project1-a" class="col s12 l10 offset-l1 right">
               <div class="card sticky-action">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="assets/images/proyectos/yape.jpg">
                 </div>
                 <div class="card-action col s12 grey">
-                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">Código</a>
+                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red accent-3  col l4 s6 offset-l2 offset-s3">Visualizar</a>
+                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">Código</a>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -213,9 +224,11 @@
               </div>
           </div>
         </div>
+      </div>
+      <h5 class="col s12 l12 offset-l1 white-text">Aplicación responsive Labcar</h5><br><br>
+      <div class="row">
         <div class="col s12 l6 right">
-          <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5>
-          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+          <ul class="collapsible col s12 l10 offset-l2 grey" data-collapsible="accordion">
             <li class="">
               <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
               <div class="collapsible-body"><span>Proyecto que simula la aplicación de labcar su funcionalidad es que se trace una ruta entre el ubicación actual y un punto de destino ingresado por el usuario y que estime la tarifa en base a la distancia entre los puntos</span></div>
@@ -237,15 +250,15 @@
           </ul>
         </div>
         <div class="col s12 l6 about__col">
-          <div id="project1-a" class="col s12 l10 offset-l1">
+          <div id="project1-a" class="col s12 l10 offset-l0">
             <div class="card sticky-action">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="assets/images/proyectos/labcar1.png">
             </div>
 
             <div class="card-action col s12 grey">
-              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">Código</a>
+              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red accent-3 col l4 s6 offset-l2 offset-s3">Visualizar</a>
+              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">Código</a>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -257,9 +270,11 @@
           </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5><br><br>
         <div class="col s12 l6 ">
-          <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5>
-          <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+          <ul class="collapsible col s12 l10 offset-l01 grey" data-collapsible="accordion">
             <li class="">
               <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
               <div class="collapsible-body"><span>Proyecto que simula la aplicación de labcar su funcionalidad es que se trace una ruta entre el ubicación actual y un punto de destino ingresado por el usuario y que estime la tarifa en base a la distancia entre los puntos</span></div>
@@ -281,14 +296,14 @@
           </ul>
         </div>
         <div class="col s12 l6 about__col">
-          <div id="project1-a" class="col s12 l10 offset-l1">
+          <div id="project1-a" class="col s12 l10 offset-l2">
               <div class="card sticky-action">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="assets/images/proyectos/neat.png">
                 </div>
                 <div class="card-action col s12 grey">
-                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">Código</a>
+                  <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red accent-3 col l4 s6 offset-l2 offset-s3">Visualizar</a>
+                  <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">Código</a>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -299,11 +314,11 @@
               </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <h5 class="col s12 l10 offset-l1 white-text">Aplicación responsive Labcar</h5><br><br>
         <div class="col s12 l6  right">
-          <p class="col s12 l10 offset-l1">Yape es la nueva aplicación del Banco de Crédito del Perú, con la que tendrás la libertad de usar tu dinero
-             como quieras, ya que pagar con ella es más rápido, sin pretextos y fácil. Solo con Yape podrás convertir tus
-             planes en experiencias únicas, sin números de cuenta ni token.</p>
-          <ul class="collapsible col s12 l10 offset-l1" data-collapsible="accordion">
+          <ul class="collapsible col s12 l10 offset-l2" data-collapsible="accordion">
             <li>
               <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
               <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
@@ -319,15 +334,15 @@
           </ul>
         </div>
         <div class="col s12 l6 about__col">
-          <div id="project1-a" class="col s12 l10 offset-l1">
+          <div id="project1-a" class="col s12 l10 offset-l0">
             <div class="card sticky-action">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="assets/images/proyectos/labcar1.png">
             </div>
 
             <div class="card-action col s12 grey">
-              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">Código</a>
+              <a href="https://flortello.github.io/Leccion34-EjercicioMaquetado/" target="_blank" class="btn red accent-3 col l4 s6 offset-l2 offset-s3">Visualizar</a>
+              <a href="https://github.com/FlorTello/Leccion34-EjercicioMaquetado" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">Código</a>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -339,12 +354,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
         <h4 class="titulo left-align white-text">Proyectos Colaborativos</h4><br>
         <div class="row">
+          <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
           <div class="col s12 l6 ">
-            <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
-            <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+            <ul class="collapsible col s12 l10 offset-l0 grey" data-collapsible="accordion">
               <li class="">
                 <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
                 <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
@@ -365,15 +379,15 @@
             </ul>
           </div>
           <div class="col s12 l6 about__col">
-            <div id="project1-a" class="col s12 l10 offset-l1">
+            <div id="project1-a" class="col s12 l10 offset-l2">
                 <div class="card sticky-action">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="assets/images/proyectos/lyft.png">
                   </div>
 
                   <div class="card-action col s12 grey">
-                    <a href="https://katherineortega.github.io/Lyft-CodeReview/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-                    <a href="https://github.com/katherineortega/Lyft-CodeReview" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">código</a>
+                    <a href="https://katherineortega.github.io/Lyft-CodeReview/" target="_blank" class="btn red accent-3 col l4 s6 offset-l2 offset-s3">Visualizar</a>
+                    <a href="https://github.com/katherineortega/Lyft-CodeReview" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">código</a>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -384,9 +398,11 @@
                 </div>
             </div>
           </div>
+        </div>
+        <div class="row">
+          <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
           <div class="col s12 l6 right">
-            <h5 class="col s12 l10 offset-l1 white-text">Aplicación móvil YAPE</h5>
-            <ul class="collapsible col s12 l10 offset-l1 grey" data-collapsible="accordion">
+            <ul class="collapsible col s12 l10 offset-l2 grey" data-collapsible="accordion">
               <li class="">
                 <div class="collapsible-header"><i class="material-icons">filter_drama</i>Acerca de Proyecto </div>
                 <div class="collapsible-body"><span>Simulación del sistema de registro de la aplicación para movil Yape del BCP</span></div>
@@ -407,15 +423,15 @@
             </ul>
           </div>
           <div class="col s12 l6 about__col">
-            <div id="project1-a" class="col s12 l10 offset-l1">
+            <div id="project1-a" class="col s12 l10 offset-l0">
               <div class="card sticky-action">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="assets/images/proyectos/porfolio.png">
               </div>
 
               <div class="card-action col s12 black">
-                <a href="https://flortello.github.io/ProyectoMaterialize/" target="_blank" class="btn red col l4 s6 offset-l2 offset-s3">Visualizar</a>
-                <a href="https://github.com/FlorTello/ProyectoMaterialize" target="_blank" class="btn red col l4 s6 offset-l1 hide-on-small-only">código</a>
+                <a href="https://flortello.github.io/ProyectoMaterialize/" target="_blank" class="btn red accent-3 col l4 s6 offset-l2 offset-s3">Visualizar</a>
+                <a href="https://github.com/FlorTello/ProyectoMaterialize" target="_blank" class="btn red accent-3 col l4 s6 offset-l1 hide-on-small-only">código</a>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4">Descripción<i class="material-icons right">close</i></span>
@@ -427,7 +443,6 @@
             </div>
           </div>
       </div>
-    </div>
   </section>
   <section class="section scrollspy center" id="contacto">
     <h3 class="center text-uppercase">Contáctame</h3>

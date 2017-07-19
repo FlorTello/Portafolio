@@ -6820,6 +6820,14 @@ header nav {
 .text-uppercase, #skill .-image span {
   text-transform: uppercase; }
 
+.text-justify {
+  text-align: justify; }
+
+#skill .icon-skill {
+  font-size: 3rem; }
+  #skill .icon-skill:hover {
+    color: #D34760; }
+
 #home, #about, #portafolio, #skill {
   min-height: 100vh; }
 

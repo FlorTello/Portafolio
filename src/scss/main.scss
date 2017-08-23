@@ -38,7 +38,18 @@ header{
 .text-justify{
   text-align: justify;
 }
+#about{
+  background-image: url('http://www.victoriadrivegospelhall.com/wp-content/uploads/2015/10/violet-vector-leaves-circles-backgrounds-for-powerpoint1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // background-size: cover;
+}
 #skill{
+  background-image: url('http://www.victoriadrivegospelhall.com/wp-content/uploads/2015/10/violet-vector-leaves-circles-backgrounds-for-powerpoint1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // background-size: cover;
+  opacity: 1;
   .icon-skill{
     font-size: 3rem;
     // color: red;
@@ -51,6 +62,7 @@ header{
 #home,#about,#portafolio,#skill{
   @include Height(100vh);
 }
+
 #home{
   background-image: url('../images/hero.jpg');
   background-repeat: no-repeat;
@@ -193,6 +205,11 @@ header{
 }
 //Contact
 #contacto {
+    background-image: url('http://www.victoriadrivegospelhall.com/wp-content/uploads/2015/10/violet-vector-leaves-circles-backgrounds-for-powerpoint1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
   .fa-6{
     font-size: 10em;
   }
